@@ -19,16 +19,16 @@ export default function GaleriaPreboda() {
 
   // 10 premium coastal/navy matches preboda images
   const images = [
-    { src: album1, caption: 'Mi lugar favorito es contigo...' },
-    { src: album2, caption: 'Dos almas en un pacto sagrado de Dios...' },
-    { src: album3, caption: 'Mi lugar favorito es contigo...' },
-    { src: album4, caption: 'Escribiendo nuestro camino juntos...' },
-    { src: album5, caption: 'Tu mirada es mi atardecer favorito...' },
-    { src: album6, caption: 'Un hogar edificado sobre la Roca...' },
-    { src: album7, caption: 'Dos corazones en un mismo latido...' },
-    { src: album8, caption: 'Nuestra historia fue escrita por Dios...' },
-    { src: album9, caption: 'Cordón de tres dobleces indestructible...' },
-    { src: album10, caption: 'Dios bendice nuestra historia...' },
+    { src: album1, caption: 'Mi lugar favorito es contigo . . .' },
+    { src: album2, caption: 'Dos almas en un pacto sagrado de Dios . . .' },
+    { src: album3, caption: 'Mi lugar favorito es contigo . . .' },
+    { src: album4, caption: 'Escribiendo nuestro camino juntos . . .' },
+    { src: album5, caption: 'Tu mirada es mi atardecer favorito . . .' },
+    { src: album6, caption: 'Un hogar edificado sobre la Roca . . .' },
+    { src: album7, caption: 'Dos corazones en un mismo latido . . .' },
+    { src: album8, caption: 'Nuestra historia fue escrita por Dios . . .' },
+    { src: album9, caption: 'Cordón de tres dobleces indestructible . . .' },
+    { src: album10, caption: 'Dios bendice nuestra historia . . .' },
   ];
 
   const handlePrev = () => {
