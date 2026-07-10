@@ -3,7 +3,7 @@ import { GoldLine, InfinityRings } from './Ornament';
 import VolumeControl from './VolumeControl';
 
 const SLIDESHOW_IMAGES = [
-  "/public/assets/GALERIAS/Portada/Album8.webp",
+  "/assets/GALERIAS/Portada/Album8.webp",
   "/assets/GALERIAS/Portada/Album3.webp",
   "/assets/GALERIAS/Portada/Portada3.webp",
   "/assets/GALERIAS/Portada/Portada4.webp",
