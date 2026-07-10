@@ -52,7 +52,7 @@ export default function GestoDeAmor() {
         <GoldLine />
 
         <p className="font-sans-clean text-xs md:text-sm text-navy-royal/80 leading-relaxed font-light mb-8 px-2">
-          Su compañía es lo mas importante. Si nace de su corazón hacernos un obsequio, lo recibiremos con mucho amor y gratitud
+          Su compañía es lo más importante. Si nace de su corazón algún un gesto de amor, lo recibiremos con mucho amor y gratitud.
         </p>
 
         {/* Accordion Box Container (Now permanently open and static) */}
@@ -76,7 +76,7 @@ export default function GestoDeAmor() {
             {/* Elegant Yape text display - WITHOUT the "y" box and with new text */}
             <div className="flex items-center justify-center space-x-2">
               <span className="font-sans-clean text-xs font-bold tracking-wider text-navy-royal flex items-center gap-1.5 select-none">
-                Copia Numero y Toca el QR 👆
+                Copia numero y Toca el QR 👇
               </span>
             </div>
 

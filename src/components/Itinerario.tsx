@@ -17,7 +17,7 @@ export default function Itinerario() {
       <div className="flex flex-col items-center justify-center my-6 px-4">
         <Clock className="w-8 h-8 text-luxury-gold mb-2.5 stroke-[1.5]" />
         <p className="font-sans-clean text-xs text-navy-royal/90 leading-relaxed font-medium max-w-xs text-center">
-          Llegar a las 3:00 p.m. para ubicarse en orden, antes del inicio de la ceremonia religiosa.
+          Llegar antes de las 3:00 p.m. para ubicarse en orden, antes del inicio de la ceremonia religiosa.
         </p>
       </div>
 
