@@ -21,7 +21,7 @@ export default function GaleriaPreboda() {
   const images = [
     { src: album1, caption: 'Mi lugar favorito es contigo . . .' },
     { src: album2, caption: 'Dos almas en un pacto sagrado de Dios . . .' },
-    { src: album3, caption: 'Mi lugar favorito es contigo . . .' },
+    { src: album3, caption: 'Elegirte una y mil veces es mi decisión . . .' },
     { src: album4, caption: 'Escribiendo nuestro camino juntos . . .' },
     { src: album5, caption: 'Tu mirada es mi atardecer favorito . . .' },
     { src: album6, caption: 'Un hogar edificado sobre la Roca . . .' },

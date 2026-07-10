@@ -76,7 +76,7 @@ export default function GestoDeAmor() {
             {/* Elegant Yape text display - WITHOUT the "y" box and with new text */}
             <div className="flex items-center justify-center space-x-2">
               <span className="font-sans-clean text-xs font-bold tracking-wider text-navy-royal flex items-center gap-1.5 select-none">
-                Copia numero y Toca el QR 👇
+                Toca el QR para abrir tu YAPE 👇
               </span>
             </div>
 
