@@ -11,6 +11,7 @@ import FormularioRSVP from './components/FormularioRSVP';
 import { GoldLine } from './components/Ornament';
 import RecordatorioFlotante from './components/RecordatorioFlotante';
 import VideoSeccion from './components/VideoSeccion';
+import fondoMusic from '@/assets/GALERIAS/Musica/Fondomusic.mp3';
 
 export default function App() {
   const [isOpened, setIsOpened] = useState(false);
@@ -35,7 +36,7 @@ export default function App() {
       {/* 2. Hidden background music - Streams automatically post-action clicks */}
       <audio
         id="bg-audio"
-        src="/assets/GALERIAS/Musica/Fondomusic.mp3"
+        src={fondoMusic}
         loop
         playsInline
       />
