@@ -67,21 +67,24 @@ export default function Hero() {
       <InfinityRings />
 
       {/* Primary Names Section */}
-      <div className="space-y-1 my-4">
+      <div className="space-y-1 my-4 notranslate" translate="no">
         <h1 
-          className="text-navy-royal text-6xl md:text-7xl tracking-wide select-none"
+          className="text-navy-royal text-6xl md:text-7xl tracking-wide select-none notranslate"
+          translate="no"
           style={{ fontFamily: '"Monsieur La Doulaise", cursive', fontWeight: 500 }}
         >
           Miguel
         </h1>
         <p 
-          className="text-3xl md:text-4xl text-luxury-gold my-1 select-none"
+          className="text-3xl md:text-4xl text-luxury-gold my-1 select-none notranslate"
+          translate="no"
           style={{ fontFamily: '"Great Vibes", cursive', fontWeight: 500 }}
         >
           &
         </p>
         <h1 
-          className="text-navy-royal text-6xl md:text-7xl tracking-wide select-none"
+          className="text-navy-royal text-6xl md:text-7xl tracking-wide select-none notranslate"
+          translate="no"
           style={{ fontFamily: '"Monsieur La Doulaise", cursive', fontWeight: 500 }}
         >
           Mariluz

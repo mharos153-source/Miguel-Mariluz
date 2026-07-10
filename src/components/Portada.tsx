@@ -91,9 +91,10 @@ export default function Portada({ onOpen, onStartOpening }: PortadaProps) {
         {/* UPPER PANEL: Names & Date block pushed lower and closer to the card */}
         <div className="text-center w-full animate-fade-in flex flex-col items-center z-10 transform translate-y-3">
           {/* Great Vibes elegance rendered across three separate centered lines with soft, regular weight */}
-          <div className="flex flex-col items-center justify-center select-none text-[#1E4C87] w-full">
+          <div className="flex flex-col items-center justify-center select-none text-[#1E4C87] w-full notranslate" translate="no">
             <h1 
-              className="text-center transition-all duration-300 hover:scale-101 flex items-center justify-center animate-fade-in"
+              className="text-center transition-all duration-300 hover:scale-101 flex items-center justify-center animate-fade-in notranslate"
+              translate="no"
               style={{
                 fontSize: 'clamp(52px, 14vw, 62px)',
                 fontWeight: 400,
@@ -105,7 +106,8 @@ export default function Portada({ onOpen, onStartOpening }: PortadaProps) {
               Miguel
             </h1>
             <span 
-              className="text-luxury-gold italic select-none"
+              className="text-luxury-gold italic select-none notranslate"
+              translate="no"
               style={{
                 fontSize: 'clamp(32px, 9vw, 38px)',
                 fontWeight: 400,
@@ -117,7 +119,8 @@ export default function Portada({ onOpen, onStartOpening }: PortadaProps) {
               &
             </span>
             <h2 
-              className="text-center transition-all duration-300 hover:scale-101 flex items-center justify-center animate-fade-in"
+              className="text-center transition-all duration-300 hover:scale-101 flex items-center justify-center animate-fade-in notranslate"
+              translate="no"
               style={{
                 fontSize: 'clamp(52px, 14vw, 62px)',
                 fontWeight: 400,
@@ -251,44 +254,80 @@ export default function Portada({ onOpen, onStartOpening }: PortadaProps) {
           {/* NATURAL CORNER FLOWERS: Illustrated botanical bridal bouquet with detailed petals, roses, hydrangeas, elongated eucalyptus leaves (Bottom Right) */}
           <div className="absolute -bottom-10 -right-10 w-[135px] h-[135px] z-25 pointer-events-none drop-shadow-[0_6px_15px_rgba(21,62,126,0.25)]">
             <svg className="w-full h-full transform rotate-180" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+              {/* Isolated defs for the bottom-right SVG to prevent multi-container rendering/cross-referencing bugs on custom mobile webviews */}
+              <defs>
+                <linearGradient id="eucalyptusGrad1_b" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stopColor="#DBE8F5"/>
+                  <stop offset="50%" stopColor="#8BAEC4"/>
+                  <stop offset="100%" stopColor="#4A6E87"/>
+                </linearGradient>
+                <linearGradient id="eucalyptusGrad2_b" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stopColor="#C4D9EE"/>
+                  <stop offset="100%" stopColor="#5E83A4"/>
+                </linearGradient>
+                <radialGradient id="sereneRoseCenter_b" cx="35%" cy="35%" r="65%">
+                  <stop offset="0%" stopColor="#EBF4FC"/>
+                  <stop offset="40%" stopColor="#9BC0E4"/>
+                  <stop offset="100%" stopColor="#3C5E82"/>
+                </radialGradient>
+                <radialGradient id="sereneRosePetal1_b" cx="30%" cy="30%" r="70%">
+                  <stop offset="0%" stopColor="#D4E4F5"/>
+                  <stop offset="70%" stopColor="#8AAECF"/>
+                  <stop offset="100%" stopColor="#4D7196"/>
+                </radialGradient>
+                <radialGradient id="sereneRosePetal2_b" cx="30%" cy="30%" r="70%">
+                  <stop offset="0%" stopColor="#EBF4FD"/>
+                  <stop offset="70%" stopColor="#97B8DB"/>
+                  <stop offset="100%" stopColor="#557597"/>
+                </radialGradient>
+                <linearGradient id="stemGrad_b" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stopColor="#9FBAD4"/>
+                  <stop offset="100%" stopColor="#435F7B"/>
+                </linearGradient>
+                <linearGradient id="leafVein_b" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stopColor="#FFFFFF" stopOpacity="0.8"/>
+                  <stop offset="100%" stopColor="#A0C2E2" stopOpacity="0.1"/>
+                </linearGradient>
+              </defs>
+
               {/* Thin twigs */}
-              <path d="M 38 30 C 26 38, 14 58, 11 78" stroke="url(#stemGrad)" strokeWidth="1.2" strokeLinecap="round" strokeDasharray="3 3"/>
-              <path d="M 30 20 C 38 28, 58 14, 78 11" stroke="url(#stemGrad)" strokeWidth="1.2" strokeLinecap="round" strokeDasharray="3 3"/>
-              <path d="M 45 45 L 12 12" stroke="url(#stemGrad)" strokeWidth="1.5" strokeLinecap="round"/>
+              <path d="M 38 30 C 26 38, 14 58, 11 78" stroke="url(#stemGrad_b)" strokeWidth="1.2" strokeLinecap="round" strokeDasharray="3 3"/>
+              <path d="M 30 20 C 38 28, 58 14, 78 11" stroke="url(#stemGrad_b)" strokeWidth="1.2" strokeLinecap="round" strokeDasharray="3 3"/>
+              <path d="M 45 45 L 12 12" stroke="url(#stemGrad_b)" strokeWidth="1.5" strokeLinecap="round"/>
 
               {/* Elongated eucalyptus leaves */}
-              <path d="M15,45 C8,35 6,55 15,62 C22,55 20,35 15,45 Z" fill="url(#eucalyptusGrad1)" stroke="#8AAECF" strokeWidth="0.5" />
-              <path d="M10,48 Q14,54 18,58" stroke="url(#leafVein)" strokeWidth="0.8" strokeLinecap="round" />
+              <path d="M15,45 C8,35 6,55 15,62 C22,55 20,35 15,45 Z" fill="url(#eucalyptusGrad1_b)" stroke="#8AAECF" strokeWidth="0.5" />
+              <path d="M10,48 Q14,54 18,58" stroke="url(#leafVein_b)" strokeWidth="0.8" strokeLinecap="round" />
 
-              <path d="M45,15 C35,8 55,6 62,15 C55,22 35,20 45,15 Z" fill="url(#eucalyptusGrad2)" stroke="#8AAECF" strokeWidth="0.5" />
-              <path d="M48,10 Q54,14 58,18" stroke="url(#leafVein)" strokeWidth="0.8" strokeLinecap="round" />
+              <path d="M45,15 C35,8 55,6 62,15 C55,22 35,20 45,15 Z" fill="url(#eucalyptusGrad2_b)" stroke="#8AAECF" strokeWidth="0.5" />
+              <path d="M48,10 Q54,14 58,18" stroke="url(#leafVein_b)" strokeWidth="0.8" strokeLinecap="round" />
 
-              <path d="M28,24 C18,16 35,10 40,20 C32,28 22,26 28,24 Z" fill="url(#eucalyptusGrad1)" stroke="#97B8DB" strokeWidth="0.4" />
-              <path d="M18,12 C8,8 6,24 15,26 C20,20 22,14 18,12 Z" fill="url(#eucalyptusGrad2)" stroke="#97B8DB" strokeWidth="0.4" />
+              <path d="M28,24 C18,16 35,10 40,20 C32,28 22,26 28,24 Z" fill="url(#eucalyptusGrad1_b)" stroke="#97B8DB" strokeWidth="0.4" />
+              <path d="M18,12 C8,8 6,24 15,26 C20,20 22,14 18,12 Z" fill="url(#eucalyptusGrad2_b)" stroke="#97B8DB" strokeWidth="0.4" />
 
               {/* Detailed Rosette */}
-              <path d="M 24,42 C 16,28 38,20 42,32 C 34,28 26,34 24,42" fill="url(#sereneRosePetal1)" stroke="#89AEC9" strokeWidth="0.4" />
-              <path d="M 42,32 C 54,18 66,30 54,44 C 46,36 44,28 42,32" fill="url(#sereneRosePetal2)" stroke="#84A7CF" strokeWidth="0.4" />
-              <path d="M 54,44 C 66,56 44,66 38,52 C 40,46 48,46 54,44" fill="url(#sereneRosePetal1)" stroke="#84A7CF" strokeWidth="0.4" />
-              <path d="M 38,52 C 24,62 16,46 24,42 C 26,44 32,50 38,52" fill="url(#sereneRosePetal2)" stroke="#89AEC9" strokeWidth="0.4" />
+              <path d="M 24,42 C 16,28 38,20 42,32 C 34,28 26,34 24,42" fill="url(#sereneRosePetal1_b)" stroke="#89AEC9" strokeWidth="0.4" />
+              <path d="M 42,32 C 54,18 66,30 54,44 C 46,36 44,28 42,32" fill="url(#sereneRosePetal2_b)" stroke="#84A7CF" strokeWidth="0.4" />
+              <path d="M 54,44 C 66,56 44,66 38,52 C 40,46 48,46 54,44" fill="url(#sereneRosePetal1_b)" stroke="#84A7CF" strokeWidth="0.4" />
+              <path d="M 38,52 C 24,62 16,46 24,42 C 26,44 32,50 38,52" fill="url(#sereneRosePetal2_b)" stroke="#89AEC9" strokeWidth="0.4" />
               
-              <path d="M 28,42 C 25,36 38,32 40,38 Q 33,38 28,42" fill="url(#sereneRoseCenter)" stroke="#557597" strokeWidth="0.38" />
-              <path d="M 40,38 C 45,32 50,38 48,44 Q 44,42 40,38" fill="url(#sereneRosePetal1)" stroke="#557597" strokeWidth="0.38" />
-              <path d="M 48,44 C 48,50 38,50 36,44 Q 42,44 48,44" fill="url(#sereneRosePetal2)" stroke="#557597" strokeWidth="0.38" />
-              <path d="M 32,42 C 32,36 44,36 44,42 C 44,46 32,46 32,42 Z" fill="url(#sereneRoseCenter)" stroke="#3C5E82" strokeWidth="0.4" />
+              <path d="M 28,42 C 25,36 38,32 40,38 Q 33,38 28,42" fill="url(#sereneRoseCenter_b)" stroke="#557597" strokeWidth="0.38" />
+              <path d="M 40,38 C 45,32 50,38 48,44 Q 44,42 40,38" fill="url(#sereneRosePetal1_b)" stroke="#557597" strokeWidth="0.38" />
+              <path d="M 48,44 C 48,50 38,50 36,44 Q 42,44 48,44" fill="url(#sereneRosePetal2_b)" stroke="#557597" strokeWidth="0.38" />
+              <path d="M 32,42 C 32,36 44,36 44,42 C 44,46 32,46 32,42 Z" fill="url(#sereneRoseCenter_b)" stroke="#3C5E82" strokeWidth="0.4" />
 
               {/* Overlapping bouquet hydrangea flowers */}
               <g transform="translate(14, 25)">
-                <path d="M5,5 C10,1 12,8 7,10" fill="url(#sereneRosePetal1)" stroke="#9EC2E8" strokeWidth="0.3"/>
-                <path d="M7,10 C12,12 5,16 3,11" fill="url(#sereneRosePetal2)" stroke="#9EC2E8" strokeWidth="0.3"/>
-                <path d="M3,11 C-2,10 0,3 5,5" fill="url(#sereneRosePetal1)" stroke="#9EC2E8" strokeWidth="0.3"/>
+                <path d="M5,5 C10,1 12,8 7,10" fill="url(#sereneRosePetal1_b)" stroke="#9EC2E8" strokeWidth="0.3"/>
+                <path d="M7,10 C12,12 5,16 3,11" fill="url(#sereneRosePetal2_b)" stroke="#9EC2E8" strokeWidth="0.3"/>
+                <path d="M3,11 C-2,10 0,3 5,5" fill="url(#sereneRosePetal1_b)" stroke="#9EC2E8" strokeWidth="0.3"/>
                 {/* Diamond core */}
                 <path d="M4.5,8 L5.5,7 L6.5,8 L5.5,9 Z" fill="#FFFFFF"/>
               </g>
               <g transform="translate(48, 48)">
-                <path d="M6,2 C11,1 11,8 6,9" fill="url(#sereneRosePetal2)" stroke="#FFFFFF" strokeWidth="0.3"/>
-                <path d="M6,9 C6,13 1,11 1,7" fill="url(#sereneRosePetal1)" stroke="#FFFFFF" strokeWidth="0.3"/>
-                <path d="M1,7 C0,3 4,4 6,2" fill="url(#sereneRosePetal2)" stroke="#FFFFFF" strokeWidth="0.3"/>
+                <path d="M6,2 C11,1 11,8 6,9" fill="url(#sereneRosePetal2_b)" stroke="#FFFFFF" strokeWidth="0.3"/>
+                <path d="M6,9 C6,13 1,11 1,7" fill="url(#sereneRosePetal1_b)" stroke="#FFFFFF" strokeWidth="0.3"/>
+                <path d="M1,7 C0,3 4,4 6,2" fill="url(#sereneRosePetal2_b)" stroke="#FFFFFF" strokeWidth="0.3"/>
                 {/* Diamond core */}
                 <path d="M3,5.5 L4,4.5 L5,5.5 L4,6.5 Z" fill="#FFFFFF"/>
               </g>
@@ -314,9 +353,9 @@ export default function Portada({ onOpen, onStartOpening }: PortadaProps) {
                 isOpening ? 'transform -translate-y-[85%] scale-102 opacity-100' : 'transform translate-y-2 opacity-10'
               }`}
             >
-              <div className="border border-[#D2B248]/45 w-full h-full rounded-md p-3 flex flex-col items-center justify-between text-center">
+              <div className="border border-[#D2B248]/45 w-full h-full rounded-md p-3 flex flex-col items-center justify-between text-center notranslate" translate="no">
                 <span className="text-2xl text-luxury-gold tracking-widest font-serif-luxury">✦</span>
-                <span className="font-cursive-pinyon text-4xl text-[#1E4C87]">M & M</span>
+                <span className="font-cursive-pinyon text-4xl text-[#1E4C87] notranslate" translate="no">M & M</span>
                 <div className="space-y-1">
                   <p className="font-sans-opensans text-[8.5px] tracking-[0.18em] text-[#1E4C87] uppercase font-bold">NUESTA BODA</p>
                   <p className="font-serif-luxury text-[8px] tracking-[0.2em] text-[#7A601E]">01 DE AGOSTO DE 2026</p>
@@ -383,7 +422,8 @@ export default function Portada({ onOpen, onStartOpening }: PortadaProps) {
               {/* Premium 3D Gold Seal Stamp */}
               <button
                 id="wax-seal-premium-button"
-                className="relative w-21 h-21 rounded-full p-0.5 border-[2px] border-[#FFF5CC] flex items-center justify-center shadow-[0_12px_28px_rgba(105,80,18,0.58),inset_0_2px_4px_rgba(255,255,255,0.45)] cursor-pointer"
+                className="relative w-21 h-21 rounded-full p-0.5 border-[2px] border-[#FFF5CC] flex items-center justify-center shadow-[0_12px_28px_rgba(105,80,18,0.58),inset_0_2px_4px_rgba(255,255,255,0.45)] cursor-pointer notranslate"
+                translate="no"
                 style={{
                   background: 'radial-gradient(circle at 35% 35%, #FFF0AA 0%, #E5C35D 45%, #C29F35 70%, #8F6D17 100%)'
                 }}
@@ -391,15 +431,17 @@ export default function Portada({ onOpen, onStartOpening }: PortadaProps) {
               >
                 {/* Wax seal rim boundaries */}
                 <div 
-                  className="w-[74px] h-[74px] rounded-full flex flex-col items-center justify-center relative border border-[#7D6116]/35 shadow-[inset_0_2px_5px_rgba(0,0,0,0.38)]"
+                  className="w-[74px] h-[74px] rounded-full flex flex-col items-center justify-center relative border border-[#7D6116]/35 shadow-[inset_0_2px_5px_rgba(0,0,0,0.38)] notranslate"
+                  translate="no"
                   style={{
                     background: 'radial-gradient(circle, #F5D572 0%, #D4AF37 55%, #9B7E1B 100%)'
                   }}
                 >
                   {/* Monogram in 3D-like Serif proportionally scaled down to fit beautifully inside the circle boundaries without overflow */}
-                  <div className="flex items-center justify-center space-x-1 mt-0.5 transform -translate-y-[1px]">
+                  <div className="flex items-center justify-center space-x-1 mt-0.5 transform -translate-y-[1px] notranslate" translate="no">
                     <span 
-                      className="font-serif-luxury text-[21px] font-bold text-[#352304] select-none"
+                      className="font-serif-luxury text-[21px] font-bold text-[#352304] select-none notranslate"
+                      translate="no"
                       style={{
                         textShadow: '1px 1px 0px #FFF3D1, 2px 2px 0px #85611A, 3px 3.5px 1.5px rgba(0,0,0,0.6)'
                       }}
@@ -407,7 +449,8 @@ export default function Portada({ onOpen, onStartOpening }: PortadaProps) {
                       M
                     </span>
                     <span 
-                      className="font-serif-luxury text-[13px] font-bold text-[#E5C158] select-none transform translate-y-[2px]"
+                      className="font-serif-luxury text-[13px] font-bold text-[#E5C158] select-none transform translate-y-[2px] notranslate"
+                      translate="no"
                       style={{
                         textShadow: '1px 1.5px 1px rgba(0,0,0,0.85)'
                       }}
@@ -415,7 +458,8 @@ export default function Portada({ onOpen, onStartOpening }: PortadaProps) {
                       &
                     </span>
                     <span 
-                      className="font-serif-luxury text-[21px] font-bold text-[#352304] select-none"
+                      className="font-serif-luxury text-[21px] font-bold text-[#352304] select-none notranslate"
+                      translate="no"
                       style={{
                         textShadow: '1px 1px 0px #FFF3D1, 2px 2px 0px #85611A, 3px 3.5px 1.5px rgba(0,0,0,0.6)'
                       }}

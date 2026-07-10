@@ -99,14 +99,14 @@ export default function App() {
           {/* Premium Footer Ending */}
           <footer className="bg-navy-dark py-16 text-center w-full">
             <div className="max-w-md mx-auto px-6 space-y-4">
-              <span className="text-5xl text-luxury-gold block" style={{ fontFamily: '"Monsieur La Doulaise", cursive' }}>
+              <span className="text-5xl text-luxury-gold block notranslate" translate="no" style={{ fontFamily: '"Monsieur La Doulaise", cursive' }}>
                 Miguel  &  Mariluz
               </span>
               <p className="font-sans-clean text-[11px] tracking-[0.2em] text-white">
                 01 • 08 • 2026
               </p>
               <GoldLine />
-              <p className="font-sans-clean text-[9px] text-white/60">
+              <p className="font-sans-clean text-[9px] text-white/60 notranslate" translate="no">
                 Hecho con amor ❤️  •   By: MiguelHaro
               </p>
             </div>
