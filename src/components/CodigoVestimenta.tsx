@@ -46,7 +46,7 @@ export default function CodigoVestimenta() {
                   style={{ backgroundColor: color.hex }}
                   title={color.name}
                 />
-                <span className="font-sans-clean text-[9px] text-navy-royal/80 tracking-tighter leading-tight font-medium text-center">
+                <span className="font-sans-clean text-[9px] text-navy-royal/80 tracking-tighter leading-tight font-medium text-center" translate="no">
                   {color.name}
                 </span>
               </div>
