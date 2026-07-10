@@ -35,7 +35,7 @@ export default function App() {
       {/* 2. Hidden background music - Streams automatically post-action clicks */}
       <audio
         id="bg-audio"
-        src="/assets/GALERIAS/Musica/Fondomusic.mp3"
+        src="/public/assets/GALERIAS/Musica/Fondomusic.mp3"
         loop
         playsInline
       />
