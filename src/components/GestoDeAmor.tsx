@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Gift, Copy, Check } from 'lucide-react';
 import { GoldLine } from './Ornament';
-import qrImage from '@/assets/GALERIAS/Album/QRyape.webp';
 
 export default function GestoDeAmor() {
   const [copied, setCopied] = useState(false);
@@ -92,7 +91,7 @@ export default function GestoDeAmor() {
               <div className="absolute bottom-2 right-2 w-4 h-4 border-b-2 border-r-2 border-[#00D6C1]"></div>
 
               <img 
-                src={qrImage} 
+                src="/assets/GALERIAS/Album/QRyape.webp" 
                 alt="QR Yape" 
                 className="w-full h-full object-contain rounded-xl select-none"
                 referrerPolicy="no-referrer"
