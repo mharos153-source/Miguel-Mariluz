@@ -59,7 +59,7 @@ export default function CodigoVestimenta() {
           <p className="font-sans-clean text-[11px] text-red-650 tracking-normal font-medium flex items-center justify-center space-x-1">
             <span>✨</span>
             <span className="text-navy-royal/90">
-              Reservamos el color <b>blanco</b> exclusivamente para la novia.
+              Reservamos los colores exclusivamente para la novia, el novio y los pajes.
             </span>
           </p>
         </div>
