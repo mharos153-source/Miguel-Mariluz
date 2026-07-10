@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import videoFile from '@/assets/GALERIAS/Video/Miguel&Mariluz.mp4';
 
 export default function VideoSeccion() {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -42,7 +43,7 @@ export default function VideoSeccion() {
       <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-serenity-light shadow-[0_12px_28px_rgba(137,166,200,0.15)] bg-slate-100 transition-all duration-1000 ease-in-out">
         <video
           ref={videoRef}
-          src="/assets/GALERIAS/Video/Miguel&Mariluz.mp4"
+          src={videoFile}
           loop
           muted
           playsInline

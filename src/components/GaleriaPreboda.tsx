@@ -1,6 +1,16 @@
 import React, { useState, useRef } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { GoldLine } from './Ornament';
+import album1 from '@/assets/GALERIAS/Album/Album1.webp';
+import album2 from '@/assets/GALERIAS/Album/Album2.webp';
+import album3 from '@/assets/GALERIAS/Album/Album3.webp';
+import album4 from '@/assets/GALERIAS/Album/Album4.webp';
+import album5 from '@/assets/GALERIAS/Album/Album5.webp';
+import album6 from '@/assets/GALERIAS/Album/Album6.webp';
+import album7 from '@/assets/GALERIAS/Album/Album7.webp';
+import album8 from '@/assets/GALERIAS/Album/Album8.webp';
+import album9 from '@/assets/GALERIAS/Album/Album9.webp';
+import album10 from '@/assets/GALERIAS/Album/Album10.webp';
 
 export default function GaleriaPreboda() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -9,16 +19,16 @@ export default function GaleriaPreboda() {
 
   // 10 premium coastal/navy matches preboda images
   const images = [
-    { src: '/assets/GALERIAS/Album/Album1.webp', caption: 'Mi lugar favorito es contigo' },
-    { src: '/assets/GALERIAS/Album/Album2.webp', caption: 'Dos almas en un pacto sagrado de Dios' },
-    { src: '/assets/GALERIAS/Album/Album3.webp', caption: 'Mi lugar favorito es contigo' },
-    { src: '/assets/GALERIAS/Album/Album4.webp', caption: 'Escribiendo nuestro camino juntos' },
-    { src: '/assets/GALERIAS/Album/Album5.webp', caption: 'Tu mirada es mi atardecer favorito' },
-    { src: '/assets/GALERIAS/Album/Album6.webp', caption: 'Un hogar edificado sobre la Roca' },
-    { src: '/assets/GALERIAS/Album/Album7.webp', caption: 'Dos corazones en un mismo latido' },
-    { src: '/assets/GALERIAS/Album/Album8.webp', caption: 'Nuestra historia fue escrita por Dios' },
-    { src: '/assets/GALERIAS/Album/Album9.webp', caption: 'Cordón de tres dobleces indestructible' },
-    { src: '/assets/GALERIAS/Album/Album10.webp', caption: 'Dios bendice nuestra historia' },
+    { src: album1, caption: 'Mi lugar favorito es contigo...' },
+    { src: album2, caption: 'Dos almas en un pacto sagrado de Dios...' },
+    { src: album3, caption: 'Mi lugar favorito es contigo...' },
+    { src: album4, caption: 'Escribiendo nuestro camino juntos...' },
+    { src: album5, caption: 'Tu mirada es mi atardecer favorito...' },
+    { src: album6, caption: 'Un hogar edificado sobre la Roca...' },
+    { src: album7, caption: 'Dos corazones en un mismo latido...' },
+    { src: album8, caption: 'Nuestra historia fue escrita por Dios...' },
+    { src: album9, caption: 'Cordón de tres dobleces indestructible...' },
+    { src: album10, caption: 'Dios bendice nuestra historia...' },
   ];
 
   const handlePrev = () => {

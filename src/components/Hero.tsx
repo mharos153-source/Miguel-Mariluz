@@ -1,13 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import { GoldLine, InfinityRings } from './Ornament';
 import VolumeControl from './VolumeControl';
+import portadaAlbum8 from '@/assets/GALERIAS/Portada/Album8.webp';
+import portadaAlbum3 from '@/assets/GALERIAS/Portada/Album3.webp';
+import portada3 from '@/assets/GALERIAS/Portada/Portada3.webp';
+import portada4 from '@/assets/GALERIAS/Portada/Portada4.webp';
+import portada5 from '@/assets/GALERIAS/Portada/Portada5.webp';
 
 const SLIDESHOW_IMAGES = [
-  "/assets/GALERIAS/Portada/Album8.webp",
-  "/assets/GALERIAS/Portada/Album3.webp",
-  "/assets/GALERIAS/Portada/Portada3.webp",
-  "/assets/GALERIAS/Portada/Portada4.webp",
-  "/assets/GALERIAS/Portada/Portada5.webp"
+  portadaAlbum8,
+  portadaAlbum3,
+  portada3,
+  portada4,
+  portada5
 ];
 
 export default function Hero() {
