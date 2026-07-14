@@ -8,7 +8,7 @@ export default function Familia() {
       {/* Upper header */}
       <div className="space-y-3 px-2">
         <h3 className="font-serif-luxury text-lg md:text-xl text-navy-dark leading-relaxed font-light">
-          Con la bendición de Dios, nuestros padres, padrinos y testigos.
+          Con la bendición de Dios, nuestros padres, padrinos y <span className="notranslate" translate="no">testigos</span>.
         </h3>
         <p className="font-sans-clean text-xs text-navy-royal/80 leading-relaxed font-light">
           Con gratitud a Dios y alegría en nuestros corazones, les invitamos a ser parte de nuestra boda.
@@ -25,12 +25,13 @@ export default function Familia() {
             <Users className="w-5 h-5 text-luxury-gold/70" />
           </div>
           <span 
-            className="font-serif-luxury text-[11px] text-luxury-gold uppercase tracking-[0.2em] block mb-2"
+            className="font-serif-luxury text-[11px] text-luxury-gold uppercase tracking-[0.2em] block mb-2 notranslate"
+            translate="no"
             style={{ fontWeight: 905 }}
           >
             Padres del Novio
           </span>
-          <div className="space-y-1">
+          <div className="space-y-1 notranslate" translate="no">
             <h4 className="font-serif-luxury text-base text-navy-dark font-medium">
               Fortunato Haro P.
             </h4>
@@ -46,12 +47,13 @@ export default function Familia() {
             <Users className="w-5 h-5 text-luxury-gold/70" />
           </div>
           <span 
-            className="font-serif-luxury text-[11px] text-luxury-gold uppercase tracking-[0.2em] block mb-2"
+            className="font-serif-luxury text-[11px] text-luxury-gold uppercase tracking-[0.2em] block mb-2 notranslate"
+            translate="no"
             style={{ fontWeight: 905 }}
           >
             Padres de la Novia
           </span>
-          <div className="space-y-1">
+          <div className="space-y-1 notranslate" translate="no">
             <h4 className="font-serif-luxury text-base text-navy-dark font-medium">
               Juan Cerna I.
             </h4>
@@ -67,12 +69,13 @@ export default function Familia() {
             <Heart className="w-5 h-5 text-red-400/70" />
           </div>
           <span 
-            className="font-serif-luxury text-[11px] text-luxury-gold uppercase tracking-[0.2em] block mb-2"
+            className="font-serif-luxury text-[11px] text-luxury-gold uppercase tracking-[0.2em] block mb-2 notranslate"
+            translate="no"
             style={{ fontWeight: 905 }}
           >
             Padrinos de Bodas
           </span>
-          <div className="space-y-1">
+          <div className="space-y-1 notranslate" translate="no">
             <h4 className="font-serif-luxury text-base text-navy-dark font-medium">
               Ronal Romero Z.
             </h4>
@@ -88,12 +91,13 @@ export default function Familia() {
             <Award className="w-5 h-5 text-navy-royal/55" />
           </div>
           <span 
-            className="font-serif-luxury text-[11px] text-luxury-gold uppercase tracking-[0.2em] block mb-2"
+            className="font-serif-luxury text-[11px] text-luxury-gold uppercase tracking-[0.2em] block mb-2 notranslate"
+            translate="no"
             style={{ fontWeight: 905 }}
           >
             Testigos
           </span>
-          <div className="space-y-1">
+          <div className="space-y-1 notranslate" translate="no">
             <h4 className="font-serif-luxury text-base text-navy-dark font-medium">
               Jonas Cotrina H.
             </h4>

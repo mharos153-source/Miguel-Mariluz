@@ -150,8 +150,8 @@ export default function Portada({ onOpen, onStartOpening }: PortadaProps) {
         <div className="relative w-full max-w-[340px] sm:max-w-[365px] py-6 z-10 aspect-[1.5/1]">
           
           {/* NATURAL CORNER FLOWERS: Illustrated botanical bridal bouquet with detailed petals, roses, hydrangeas, elongated eucalyptus leaves (Top Left) */}
-          <div className="absolute -top-9 -left-9 w-[135px] h-[135px] z-25 pointer-events-none drop-shadow-[0_6px_15px_rgba(21,62,126,0.25)]">
-            <svg className="w-full h-full" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <div className="absolute -top-9 -left-9 w-[135px] h-[135px] z-25 pointer-events-none drop-shadow-[0_6px_15px_rgba(21,62,126,0.25)] notranslate" translate="no">
+            <svg className="w-full h-full notranslate" translate="no" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
               {/* Defs containing exclusively Serenity Blue volumetric gradients */}
               <defs>
                 <linearGradient id="eucalyptusGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -252,8 +252,8 @@ export default function Portada({ onOpen, onStartOpening }: PortadaProps) {
           </div>
 
           {/* NATURAL CORNER FLOWERS: Illustrated botanical bridal bouquet with detailed petals, roses, hydrangeas, elongated eucalyptus leaves (Bottom Right) */}
-          <div className="absolute -bottom-10 -right-10 w-[135px] h-[135px] z-25 pointer-events-none drop-shadow-[0_6px_15px_rgba(21,62,126,0.25)]">
-            <svg className="w-full h-full transform rotate-180" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <div className="absolute -bottom-10 -right-10 w-[135px] h-[135px] z-25 pointer-events-none drop-shadow-[0_6px_15px_rgba(21,62,126,0.25)] notranslate" translate="no">
+            <svg className="w-full h-full transform rotate-180 notranslate" translate="no" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
               {/* Isolated defs for the bottom-right SVG to prevent multi-container rendering/cross-referencing bugs on custom mobile webviews */}
               <defs>
                 <linearGradient id="eucalyptusGrad1_b" x1="0%" y1="0%" x2="100%" y2="100%">
